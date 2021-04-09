@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    Transform player;
+    //Transform player;
     new Rigidbody2D rigidbody2D;
     private float bulSpeed = 4f;
 
     private void Start()
     {
         rigidbody2D = GetComponent<Rigidbody2D>();
-        player = GameObject.FindWithTag("Weapon").transform;
+       // player = GameObject.FindWithTag("Weapon").transform;
         rigidbody2D.velocity = transform.right * bulSpeed;
         Destroy(this.gameObject, 3f);
     }
