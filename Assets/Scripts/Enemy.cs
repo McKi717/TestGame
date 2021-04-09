@@ -71,7 +71,7 @@ public class Enemy : MonoBehaviour
         //смерть при падении в пропасть
         if (transform.position.y < -10)
         {
-            Dead();
+            transform.position=new Vector3(0,1,0);
         }
 
     }
@@ -104,12 +104,5 @@ public class Enemy : MonoBehaviour
         Dead();
 
     }
-
-
-
-
-
-
-
 
 }

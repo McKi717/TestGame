@@ -17,8 +17,10 @@ public class Spawner : MonoBehaviour
     }
     void Spawn()
     {
+        
         Vector3 posSpawn = new Vector3(Random.Range(-6f, 6f), transform.position.y, transform.position.z);
         Instantiate(Monster, posSpawn, Quaternion.identity);
         deadEnemy = false;
+
     }
 }
