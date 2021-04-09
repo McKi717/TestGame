@@ -8,7 +8,6 @@ public class FrogMove : MonoBehaviour
     float speed = 4f;
     public Vector2 jumpHeight;
    
-    SpriteRenderer spriteRenderer;
     new Rigidbody2D rigidbody2D;
     Animator animator;
     public GameObject checkGround;
@@ -16,7 +15,6 @@ public class FrogMove : MonoBehaviour
     private bool faceRight;
     private void Start()
     {   
-        spriteRenderer = GetComponent<SpriteRenderer>();
         rigidbody2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
@@ -84,8 +82,6 @@ public class FrogMove : MonoBehaviour
         transform.Rotate(0, 180, 0);  
     }
    
-
-
 } 
 
    
